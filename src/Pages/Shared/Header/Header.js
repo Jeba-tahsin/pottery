@@ -10,7 +10,7 @@ const Header = () => {
             
           </div>
           <Link class="navbar-brand" href="#">
-            <span className='text-warning fst-italic'>Ceramic</span>
+            <span className='text-warning fst-italic'>Pottery</span>
           </Link>
           <button
             class="navbar-toggler"

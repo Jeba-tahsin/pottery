@@ -15,7 +15,7 @@
     },
     {
       "id": 3,
-      "name": "Ceramic",
+      "name": "Ceramic Vase",
       "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate explicabo ipsa provident. Ut recusandae pariatur dolorem incidunt minus eaque",
       "price": "12",
       "img": "https://media.istockphoto.com/photos/handmade-minimal-ceramics-picture-id1272309995?b=1&k=20&m=1272309995&s=170667a&w=0&h=UCQL3ZLgIxnBxyMnbMigs_dyKqV4CYnxNmwzE6XsZPI="
@@ -36,35 +36,35 @@
     },
     {
       "id": 6,
-      "name": "Metal Vase",
+      "name": "Cylinder Vase",
       "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate explicabo ipsa provident. Ut recusandae pariatur dolorem incidunt minus eaque",
       "price": "12",
       "img": "https://media.istockphoto.com/photos/handmade-minimal-ceramics-picture-id1272309995?b=1&k=20&m=1272309995&s=170667a&w=0&h=UCQL3ZLgIxnBxyMnbMigs_dyKqV4CYnxNmwzE6XsZPI="
     },
     {
       "id": 7,
-      "name": "Metal Vase",
+      "name": "Mason Jar",
       "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate explicabo ipsa provident. Ut recusandae pariatur dolorem incidunt minus eaque",
       "price": "12",
       "img": "https://media.istockphoto.com/photos/handmade-minimal-ceramics-picture-id1272309995?b=1&k=20&m=1272309995&s=170667a&w=0&h=UCQL3ZLgIxnBxyMnbMigs_dyKqV4CYnxNmwzE6XsZPI="
     },
     {
       "id": 8,
-      "name": "Metal Vase",
+      "name": "Rustic Vase",
       "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate explicabo ipsa provident. Ut recusandae pariatur dolorem incidunt minus eaque",
       "price": "12",
       "img": "https://media.istockphoto.com/photos/handmade-minimal-ceramics-picture-id1272309995?b=1&k=20&m=1272309995&s=170667a&w=0&h=UCQL3ZLgIxnBxyMnbMigs_dyKqV4CYnxNmwzE6XsZPI="
     },
     {
       "id": 9,
-      "name": "Metal Vase",
+      "name": "Bud Vase",
       "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate explicabo ipsa provident. Ut recusandae pariatur dolorem incidunt minus eaque",
       "price": "12",
       "img": "https://media.istockphoto.com/photos/handmade-minimal-ceramics-picture-id1272309995?b=1&k=20&m=1272309995&s=170667a&w=0&h=UCQL3ZLgIxnBxyMnbMigs_dyKqV4CYnxNmwzE6XsZPI="
     },
     {
       "id": 10,
-      "name": "Metal Vase",
+      "name": "Amphora Vase",
       "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate explicabo ipsa provident. Ut recusandae pariatur dolorem incidunt minus eaque",
       "price": "12",
       "img": "https://media.istockphoto.com/photos/handmade-minimal-ceramics-picture-id1272309995?b=1&k=20&m=1272309995&s=170667a&w=0&h=UCQL3ZLgIxnBxyMnbMigs_dyKqV4CYnxNmwzE6XsZPI="

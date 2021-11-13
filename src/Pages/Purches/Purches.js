@@ -50,11 +50,10 @@ const Purches = () => {
   return <div>
       <div>
       <div className="container">
-        <h2 className="my-5">Place Order</h2>
-
-        <div className="row">
-          <div className="">
-            <h2>Form</h2>
+        <h2 className="my-5 text-center">Place Order</h2>
+        <div className="row pb-5">
+          <div className="d-flex justify-content-center">
+            
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-2">
                 <input

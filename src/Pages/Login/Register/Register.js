@@ -52,7 +52,8 @@ const Register = () => {
         e.preventDefault();
       }
     return (
-        <div>
+        <div style={{minHeight: "50vh", backgroundColor: "rgb(253, 246, 236)"}}>
+          <h2 className='text-center text-warning pt-5'>Register</h2>
       <p>{success}</p>
       <p>{errorMsg}</p>
       <form onSubmit={handleSignUp}>
@@ -70,20 +71,7 @@ const Register = () => {
             name="name"
           />
         </div>
-        <div class="mb-3 d-flex justify-content-center mt-4">
-          <label for="exampleInputEmail1" class="form-label">
-            Address :
-          </label>
-          <input
-            onBlur={getInput}
-            type="text"
-            class="form-control w-50"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="your address"
-            name="address"
-          />
-        </div>
+        
         <div class="mb-3 d-flex justify-content-center mt-4">
           <label for="exampleInputEmail1" class="form-label">
             Email :
@@ -111,11 +99,13 @@ const Register = () => {
             name="password"
           />
         </div>
-        <button type="submit" class="btn btn-primary mb-4">
+       <div className='d-flex justify-content-center'>
+       <button type="submit" class="btn btn-primary mb-4">
           Register
         </button>
+       </div>
       </form>
-      <div>
+      <div className='text-center fw-bold pb-4'>
       <Link to='/login'>Login</Link>
       </div>
     </div>

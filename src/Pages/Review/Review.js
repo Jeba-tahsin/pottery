@@ -20,7 +20,7 @@ const Review = () => {
 
     return (
         <div className="py-5 " style={{ backgroundColor: "rgb(253, 246, 236)"}}>
-      <h2 className="mb-4 text-center">Your Review</h2>
+      <h2 className="mb-4 text-center">Write Your Review</h2>
       <div className="d-flex justify-content-center">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-2">

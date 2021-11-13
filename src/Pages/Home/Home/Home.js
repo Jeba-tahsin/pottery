@@ -6,7 +6,7 @@ import Products from '../Products/Products';
 
 const Home = () => {
     return (
-        <div>
+        <div style={{minHeight: "50vh", backgroundColor: "rgb(253, 246, 236)"}}>
             <Banner></Banner>
            <Products></Products>
            <About></About>

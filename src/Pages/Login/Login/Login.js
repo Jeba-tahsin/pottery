@@ -48,7 +48,8 @@ const Login = () => {
       e.preventDefault();
     }
     return (
-         <div>
+         <div style={{minHeight: "50vh", backgroundColor: "rgb(253, 246, 236)"}}>
+           <h2 className='text-center text-warning pt-5'>Login</h2>
       <p>{success}</p>
       <p>{errorMsg}</p>
       <form onSubmit={handleLogin}>
@@ -79,11 +80,13 @@ const Login = () => {
             name='password'
           />
         </div>
-        <button type="submit" class="btn btn-primary mb-4">
+        <div className='d-flex justify-content-center'>
+        <button type="submit" class="btn btn-primary mb-4 d-flex justify-content-center">
           Login
         </button>
+        </div>
       </form>
-      <div>
+      <div className='text-center fw-bold pb-4'>
           <Link to='/register'>Register</Link>
       </div>
     </div>

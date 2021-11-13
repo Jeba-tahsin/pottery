@@ -8,7 +8,7 @@ const Details = () => {
   // const {name,img, cost, time, description} = explore;
   const [details, setDetails] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://murmuring-caverns-91495.herokuapp.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);

@@ -4,13 +4,13 @@ import {MdDelete} from 'react-icons/md'
 const ManageProducts = () => {
   const [manageProducts, setManageProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://murmuring-caverns-91495.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setManageProducts(data));
   }, [manageProducts]);
 
   const handleProductDetele = (id) => {
-    const url = `http://localhost:5000/deleteProduct/${id}`;
+    const url = `https://murmuring-caverns-91495.herokuapp.com/deleteProduct/${id}`;
     fetch(url, {
       method: "DELETE",
     })

@@ -11,7 +11,7 @@ const Purches = () => {
   const [loginUser, setLoginUser] = useContext(AuthContext);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://murmuring-caverns-91495.herokuapp.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setOrderDetails(data));
   }, []);
@@ -37,7 +37,7 @@ const Purches = () => {
       purcheStatus: "pending",
     };
     console.log(orderData);
-    axios.post("http://localhost:5000/orders", orderData).then((res) => {
+    axios.post("https://murmuring-caverns-91495.herokuapp.com/orders", orderData).then((res) => {
       if (res.data.insertedId) {
         alert(
           `booking successfully. Please review this product ${history.push(

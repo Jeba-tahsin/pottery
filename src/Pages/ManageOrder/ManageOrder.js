@@ -6,7 +6,7 @@ const ManageOrder = () => {
     const [manageOrder, setManageOrder] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://murmuring-caverns-91495.herokuapp.com/orders')
          .then(res => res.json())
          .then(data => setManageOrder(data));
     }, [manageOrder]);
@@ -14,7 +14,7 @@ const ManageOrder = () => {
 
     const handleDeleteOrder = (id) => {
       console.log(id)
-      fetch(`http://localhost:5000/deletePurches/${id}`, {
+      fetch(`https://murmuring-caverns-91495.herokuapp.com/deletePurches/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

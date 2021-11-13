@@ -12,7 +12,7 @@ const DashbordPage = () => {
   const [loginUser, setLoginUser] = useContext(AuthContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admin?email=" + loginUser.email)
+    fetch("https://murmuring-caverns-91495.herokuapp.com/admin?email=" + loginUser.email)
       .then((res) => res.json())
       .then((data) => setAdmin(data));
   }, []);

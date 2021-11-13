@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import AddProducts from './Pages/AddProducts/AddProducts';
+import DashbordPage from './Pages/Dashbord/DashbordPage/DashbordPage';
 import Details from './Pages/Details/Details';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
@@ -12,6 +13,7 @@ import ManageProducts from './Pages/ManageProducts/ManageProducts';
 import MoreItems from './Pages/More/MoreItems/MoreItems';
 import NotFound from './Pages/NotFound/NotFound';
 import Purches from './Pages/Purches/Purches';
+import Review from './Pages/Review/Review';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 
@@ -46,9 +48,15 @@ function App() {
           <Route path='/manageProducts'>
             <ManageProducts></ManageProducts>
           </Route>
+          <PrivateRoute path='/dashBord'>
+            <DashbordPage></DashbordPage>
+          </PrivateRoute>
           <Route path='/manageOrder'>
             <ManageOrder></ManageOrder>
           </Route>
+          <PrivateRoute path='/review'>
+            <Review></Review>
+          </PrivateRoute>
           <PrivateRoute path='/purches/:id'>
             <Purches></Purches>
           </PrivateRoute>

@@ -49,18 +49,9 @@ const Header = () => {
                 MoreItems
               </Link>
 
-              {loginUser?.email && <Link className="nav-link text-white" to="/addProducts">
-              Add Products
+              {loginUser?.email &&<Link class="nav-link text-light" to="/dashBord">
+                Dashboard
               </Link>}
-
-              <Link class="nav-link text-white" to="/manageProducts">
-              Manage Products
-              </Link>
-
-
-              <Link class="nav-link text-white" to="/manageOrder">
-              Manage Order
-              </Link>
 
               {loginUser?.email ? (
                 <Link

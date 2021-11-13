@@ -22,14 +22,12 @@ const ManageProducts = () => {
       });
   };
   return (
-    <>
-      <div className="container manageBooking">
-        <table class="table">
+    
+      <div className="p-5 " style={{ backgroundColor: "rgb(253, 246, 236)"}}>
+        <table class="table text-center">
           <thead>
             <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Phone</th>
-              <th scope="col">Status</th>
+              <th scope="col">Product Name</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>
@@ -37,8 +35,6 @@ const ManageProducts = () => {
             {manageProducts.map((product) => (
               <tr>
                 <td>{product?.name}</td>
-                <td>{product?.phoneNumber}</td>
-                <td>{product?.bookingStatus}</td>
                 <td>
                   {" "}
                   <button onClick={() => handleProductDetele(product?._id)} key={product._id}>
@@ -50,7 +46,7 @@ const ManageProducts = () => {
           </tbody>
         </table>
       </div>
-    </>
+    
   );
 };
 

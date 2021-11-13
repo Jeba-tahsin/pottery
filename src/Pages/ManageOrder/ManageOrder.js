@@ -26,7 +26,7 @@ const ManageOrder = () => {
         });
     };
     return (
-        <div className='container manageBooking'>
+        <div className='p-5' style={{ backgroundColor: "rgb(253, 246, 236)"}}>
             <table class="table">
         <thead>
           <tr>

@@ -21,7 +21,8 @@ const ManageOrderStatus = ({status, purchesId}) => {
 alert("Updated Successfully");
   };
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <div>
+          <form onSubmit={handleSubmit(onSubmit)}>
         <select
           {...register("updateStatus")}
           class="form-select"
@@ -34,6 +35,7 @@ alert("Updated Successfully");
         </select>
         <input type="submit" />
       </form>
+        </div>
     );
 };
 

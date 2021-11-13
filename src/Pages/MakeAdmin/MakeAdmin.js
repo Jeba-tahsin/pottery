@@ -14,18 +14,20 @@ const MakeAdmin = () => {
     console.log(data);
   };
   return (
-    <div className="m-5">
+    <div className="py-5 text-center" style={{ backgroundColor: "rgb(253, 246, 236)"}}>
       <h2>Create an Admin</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-5">
+       <div className='d-flex justify-content-center'>
+       <form onSubmit={handleSubmit(onSubmit)}>
+        <div>
           <input
             className="m-3"
-            placeholder="New Admin Email"
+            placeholder="Admin Email"
             {...register("email", { required: true })}
           />
         </div>
         <input type="submit" value="Submit" />
       </form>
+       </div>
     </div>
   );
 };

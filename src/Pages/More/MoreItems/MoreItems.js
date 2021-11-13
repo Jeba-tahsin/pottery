@@ -11,7 +11,7 @@ const MoreItems = () => {
           .then(data => setMoreItems(data))
     })
     return (
-        <div className="mt-5">
+        <div className="pt-5 pb-5" style={{ backgroundColor: "rgb(253, 246, 236)"}}>
         <h2 className="text-warning text-center fst-italic fw-bold ">More Products</h2>
         <div className="row m-3">
              {

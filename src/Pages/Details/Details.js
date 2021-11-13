@@ -34,8 +34,10 @@ const Details = () => {
             Avialable Color: {details?.color}
           </li>
         </ul>
+         <div>
+         <Link to={`/purches/${id}`}><button className='text-center'>Purches</button></Link>
+         </div>
       </div>
-      <Link to={`/purches/${id}`}><button className='text-center'>Purches</button></Link>
     </div>
   );
 };

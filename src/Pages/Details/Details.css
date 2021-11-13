@@ -1,0 +1,12 @@
+.details{
+    font-style: italic;
+    margin: 40px;
+    text-align: center;
+}
+.textColor{
+    color: rgb(2, 17, 16);
+    font-weight: 500;
+}
+.details img{
+    width: 30rem;
+}

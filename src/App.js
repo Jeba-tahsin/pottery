@@ -12,6 +12,7 @@ import ManageOrder from './Pages/ManageOrder/ManageOrder';
 import ManageProducts from './Pages/ManageProducts/ManageProducts';
 import MoreItems from './Pages/More/MoreItems/MoreItems';
 import NotFound from './Pages/NotFound/NotFound';
+import Pay from './Pages/Pay/Pay';
 import Purches from './Pages/Purches/Purches';
 import Review from './Pages/Review/Review';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -54,9 +55,15 @@ function App() {
           <Route path='/manageOrder'>
             <ManageOrder></ManageOrder>
           </Route>
-          <PrivateRoute path='/review'>
+          <Route path='/payment'>
+             <Pay></Pay>
+          </Route>
+          <Route path='/review'>
             <Review></Review>
-          </PrivateRoute>
+          </Route>
+          <Route path='/purches'>
+            <Purches></Purches>
+          </Route>
           <PrivateRoute path='/purches/:id'>
             <Purches></Purches>
           </PrivateRoute>

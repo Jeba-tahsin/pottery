@@ -9,13 +9,16 @@ const AuthProvider = ({children}) => {
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
+     if(user) {
       const { displayName, email, photoURL } = user;
       const userInfo = {
         name: displayName,
         email,
         photo: photoURL,
       };
+      
       setLoginUser(userInfo);
+     }
     });
   }, [auth]);
     return (

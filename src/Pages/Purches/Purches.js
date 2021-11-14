@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory, useParams } from "react-router";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 
 const Purches = () => {
@@ -57,14 +58,14 @@ const Purches = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="mb-2">
                 <input
-                  defaultValue={loginUser.email}
+                  defaultValue={loginUser?.email}
                   {...register("email", { required: true })}
                 />
               </div>
               <div className="mb-2">
                 <input
                   placeholder="Enter Your Name"
-                  defaultValue={loginUser.displayName}
+                  defaultValue={loginUser?.displayName}
                   {...register("userName", { required: true })}
                 />
               </div>
@@ -85,6 +86,9 @@ const Purches = () => {
               {errors.exampleRequired && <span>This field is required</span>}
 
               <input type="submit" value="Order Now" />
+              <Link to="/payment">
+              <button className='mx-3'>Payment</button>
+            </Link>
             </form>
           </div>
         </div>

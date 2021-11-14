@@ -10,12 +10,25 @@ const MyOrder = () => {
     fetch("https://murmuring-caverns-91495.herokuapp.com/ordersEmail?email=" + loginUser.email)
       .then((res) => res.json())
       .then((data) => setOrderList(data));
-  }, [loginUser.email]);
+  }, [loginUser.email, orderList]);
 
   console.log(orderList);
+
+  const handleCancleOrder = (id) => {
+    fetch(`https://murmuring-caverns-91495.herokuapp.com/deletePurches/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if(data) {
+          alert('Are you sure to delete?');
+        }
+      
+      });
+  }
   return (
     <div>
-      <div className="container my-5">
+      <div className="container my-5" style={{ minHeight: "40vh"}}>
         {orderList.map((order) => (
           <div>
             <div className="row pb-3 mb-3 ">
@@ -27,7 +40,7 @@ const MyOrder = () => {
                 <h6>Price: ${order?.cost}</h6>
                 <h6>Color: {order?.color}</h6>
                 <h6>Size: {order?.size}</h6>
-                <button className="btn btn-warning">cancle</button>
+                <button onClick={() => handleCancleOrder(order?._id)} className="btn btn-warning">Cancle order</button>
               </div>
             </div>
           </div>

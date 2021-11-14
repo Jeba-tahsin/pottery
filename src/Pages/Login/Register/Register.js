@@ -10,11 +10,10 @@ initializeAuthorization();
 const Register = () => {
     const [user, setUser] = useState({
         name:'',
-        address:'',
         email:'',
         password:''
     });
-    console.log(user);
+  
 
     const history = useHistory();
   const location = useLocation();
@@ -31,7 +30,7 @@ const Register = () => {
     } 
 
     const handleSignUp = (e) => {
-        if(user.email !== '' && user.password !== '' && user.name !== '' && user.address !== ''){
+        if(user.email !== '' && user.password !== '' && user.name !== ''){
             const auth = getAuth();
             createUserWithEmailAndPassword(auth, user.email, user.password)
               .then((userCredential) => {
@@ -49,6 +48,7 @@ const Register = () => {
                 setSuccess('');
               });
         }
+    
         e.preventDefault();
       }
     return (
